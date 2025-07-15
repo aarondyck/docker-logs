@@ -42,11 +42,11 @@ An all-in-one installation script is provided to set up the entire service.
 1.  **Clone the repository or download the script** to your server.
 2.  **Make the script executable:**
     ```bash
-    chmod +x install-docker-logger.sh
+    chmod +x install-logger.sh
     ```
 3.  **Run the script with `sudo`:**
     ```bash
-    sudo ./install-docker-logger.sh
+    sudo ./install-logger.sh
     ```
 The script will automatically:
 * Check for required dependencies (`docker`, `logrotate`) and offer to install them.
@@ -58,7 +58,7 @@ The script will automatically:
 
 To completely remove the service and all its components, run the installation script with the `--remove` flag.
 ```bash
-sudo ./install-docker-logger.sh --remove
+sudo ./install-logger.sh --remove
 ```
 The removal process will:
 1.  Stop and disable the `systemd` service.
